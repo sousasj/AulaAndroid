@@ -3,4 +3,5 @@
     <string name="title_activity_aula2">Aula2Activity</string>
     <string name="nome">Nome</string>
     <string name="apelido">Apelido</string>
+    <string name="title_activity_exercicio1">Exercicio1Activity</string>
 </resources>

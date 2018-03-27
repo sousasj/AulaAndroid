@@ -1,46 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="co.mz.aulasandroid.Aula2.Aula2Activity"
-    tools:showIn="@layout/activity_aula2">
+    tools:context="co.mz.aulasandroid.Exercicio1.Exercicio1Activity"
+    tools:showIn="@layout/activity_exercicio1"
+    android:padding="16dp"
+    android:orientation="vertical">
 
     <EditText
-        android:id="@+id/etNome"
+        android:id="@+id/number1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/nome" />
-
+        android:hint="Primeiro Numero"/>
     <EditText
-        android:id="@+id/etApelido"
+        android:id="@+id/number2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/etNome"
-        android:hint="@string/apelido" />
-
+        android:hint="Segundo Numero"/>
     <Button
-        android:id="@+id/btShow"
+        android:id="@+id/add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/etApelido"
-        android:text="Mostrar"/>
-
+        android:text="Adicionar"/>
     <Button
-        android:id="@+id/btSpinner"
+        android:id="@+id/sub"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btShow"
-        android:text="Aula 3"/>
-
+        android:text="Subtrair"/>
     <Button
-        android:id="@+id/btExercicio"
+        android:id="@+id/mult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btShow"
-        android:text="Exercicio"/>
-
-</RelativeLayout>
+        android:text="Multiplicar"/>
+    <Button
+        android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dividir"/>
+</LinearLayout>

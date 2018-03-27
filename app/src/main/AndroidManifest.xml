@@ -9,17 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Aula1.MainActivity">
+        <activity android:name=".Aula1.MainActivity"></activity>
+        <activity
+            android:name=".Aula2.Aula2Activity"
+            android:label="@string/title_activity_aula2"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".Aula3.SpinnerActivity" />
+        <activity
+            android:name=".Exercicio1.Exercicio1Activity"
+            android:label="@string/title_activity_exercicio1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".DashboardActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Aula2.Aula2Activity"
-            android:label="@string/title_activity_aula2"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
