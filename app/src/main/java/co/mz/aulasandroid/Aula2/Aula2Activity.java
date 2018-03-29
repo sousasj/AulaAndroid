@@ -14,6 +14,7 @@ import android.widget.Toast;
 import co.mz.aulasandroid.Aula3.SpinnerActivity;
 import co.mz.aulasandroid.Exercicio1.Exercicio1Activity;
 import co.mz.aulasandroid.R;
+import co.mz.aulasandroid.UltimaAula.DetalhesActivity;
 
 public class Aula2Activity extends AppCompatActivity {
 
@@ -35,13 +36,17 @@ public class Aula2Activity extends AppCompatActivity {
         btActivity = (Button) findViewById(R.id.btSpinner);
         bExercicio = (Button) findViewById(R.id.btExercicio);
 
-        nome = etNome.getText().toString();
-        apelido = etApelido.getText().toString();
-
         bMostrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Aula2Activity.this,nome + " " + apelido , Toast.LENGTH_SHORT).show();
+
+                nome = etNome.getText().toString();
+                apelido = etApelido.getText().toString();
+
+                Intent i = new Intent(Aula2Activity.this, DetalhesActivity.class);
+                i.putExtra("nome" ,nome);
+                i.putExtra("apelido" ,apelido);
+                startActivity(i);
             }
         });
 
